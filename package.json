@@ -1,0 +1,12 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "My work portfolio",
+    "main": "index.js",
+    "git": "git@github.com:BernardoAguayoOrtega/work-portfolio.git",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Bernardo Aguayo Ortega",
+    "license": "MIT"
+}
