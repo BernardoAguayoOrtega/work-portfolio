@@ -1,95 +1,164 @@
-        /*export google fonts*/
-    
-    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
-    /*General styles*/
-    
-    * {
-        margin: 0;
-        padding: 0;
+/*export google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+/*General styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*base styles*/
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke
+}
+
+i {
+    color: black;
+}
+
+
+/*small mobile*/
+
+@media screen and (min-width:320px) {
+    /*nav bar*/
+    .nav {
+        transition: 1s;
+        background-color: black;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 5px 3px wheat;
+        justify-content: center;
     }
-    /*base styles*/
-    
-    body {
-        font-family: 'Crimson Text', serif;
-        font-weight: 400;
-        line-height: 1.4;
+    /*nav list*/
+    .nav-list {
+        display: flex;
+        margin: 0 auto;
     }
-    
-    ul {
-        list-style: none;
+    /*nav list anchor element*/
+    .nav-list a {
+        transition: 1s;
+        display: block;
+        font-size: 20px;
+        padding: 10px;
     }
-    
-    a {
-        text-decoration: none;
-        color: whitesmoke
-    }
-    
-    i {
+    /*nav list hover*/
+    .nav-list a:hover {
+        background-color: whitesmoke;
         color: black;
     }
-    /*small mobile*/
-    
-    @media screen and (min-width:320px) {
-        /*nav bar*/
-        .nav {
-            transition: 1s;
-            background-color: black;
-            display: flex;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            box-shadow: 5px 3px wheat;
-            justify-content: center;
-        }
-        /*nav list*/
-        .nav-list {
-            display: flex;
-            margin: 0 auto;
-        }
-        /*nav list anchor element*/
-        .nav-list a {
-            transition: 1s;
-            display: block;
-            font-size: 20px;
-            padding: 10px;
-        }
-        /*nav list hover*/
-        .nav-list a:hover {
-            background-color: whitesmoke;
-            color: black;
-        }
-        /*welcome section*/
-        .welcome-section {
-            transition: 1s;
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            height: 100vh;
-            text-align: center;
-            color: wheat;
-        }
-        .welcome-section h1 {
-            font-size: 40px;
-        }
-        .welcome-section p {
-            font-size: 20px;
-            font-weight: 400;
-        }
-        /*projects section*/
-        .projects-section {
-            width: 100%;
-        }
-        /*projects section header*/
-        .projects-section-header {
-            text-align: center;
-        }
-        /*projects section grid*/
-        .projects-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            /*project*/
-        }
+    /*welcome section*/
+    .welcome-section {
+        transition: 1s;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        color: wheat;
+    }
+    .welcome-section h1 {
+        font-size: 40px;
+    }
+    .welcome-section p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    /*projects section*/
+    .projects-section {
+        width: 100%;
+        background-color: beige;
+    }
+    /*projects section header*/
+    .projects-section-header {
+        text-align: center;
+        font-weight: 400;
+        margin: 0 20px;
+        border-bottom: black solid 1px;
+    }
+    /*projects section grid*/
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    /*project*/
+    .project {
+        margin: 22px;
+        background-color: black;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        display: inline;
+    }
+    /*code*/
+    .code {
+        color: black;
+        transition: color 1s ease-out;
+    }
+    /*code hover*/
+    .project:hover .code {
+        color: whitesmoke;
+    }
+    /*image*/
+    .project-image {
+        width: 100%;
+    }
+    /*project titñe*/
+    .project-title {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        padding: 5px;
+    }
+    /*button*/
+    .btn {
+        display: flex;
+        color: black;
+        justify-content: center;
+        border-radius: 5px;
+        margin: 0 50px;
+        padding: 5px;
+    }
+    .btn-show-all {
+        transition: 1s;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: wheat;
+    }
+    .btn i {
+        transition: 1s;
+        margin-top: 5px;
+        padding-left: 5px;
+    }
+    /*button hover*/
+    .btn-show-all:hover {
+        background-color: black;
+        color: whitesmoke;
+        transition: 1s;
+    }
+    /*i hover*/
+    .btn-show-all:hover>i {
+        transform: translateX(10px);
+        color: whitesmoke;
+        transition: 1s;
+    }
+}
