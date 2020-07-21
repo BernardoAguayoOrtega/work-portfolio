@@ -1,3 +1,81 @@
     /*export google fonts*/
     
     @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+    /*General styles*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*base styles*/
+    
+    body {
+        font-family: 'Crimson Text', serif;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: whitesmoke
+    }
+    
+    i {
+        color: black;
+    }
+    /*small mobile*/
+    
+    @media screen and (min-width:320px) {
+        /*nav bar*/
+        .nav {
+            transition: 1s;
+            background-color: black;
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 5px 3px wheat;
+            justify-content: center;
+        }
+        /*nav list*/
+        .nav-list {
+            display: flex;
+            margin: 0 auto;
+        }
+        /*nav list anchor element*/
+        .nav-list a {
+            transition: 1s;
+            display: block;
+            font-size: 20px;
+            padding: 10px;
+        }
+        /*nav list hover*/
+        .nav-list a:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+        /*welcome section*/
+        .welcome-section {
+            transition: 1s;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            color: wheat;
+        }
+        .welcome-section h1 {
+            font-size: 40px;
+        }
+        .welcome-section p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
