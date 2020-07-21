@@ -15,7 +15,6 @@
 body {
     font-family: 'Crimson Text', serif;
     font-weight: 400;
-    line-height: 1.4;
 }
 
 ul {
@@ -24,7 +23,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: whitesmoke
+    color: white
 }
 
 i {
@@ -44,7 +43,7 @@ i {
         top: 0;
         left: 0;
         width: 100%;
-        box-shadow: 5px 3px wheat;
+        box-shadow: 5px 3px white;
         justify-content: center;
     }
     /*nav list*/
@@ -61,7 +60,7 @@ i {
     }
     /*nav list hover*/
     .nav-list a:hover {
-        background-color: whitesmoke;
+        background-color: white;
         color: black;
     }
     /*welcome section*/
@@ -74,7 +73,7 @@ i {
         width: 100%;
         height: 100vh;
         text-align: center;
-        color: wheat;
+        color: white;
     }
     .welcome-section h1 {
         transition: 1s;
@@ -93,8 +92,9 @@ i {
     }
     /*projects section*/
     .projects-section {
+        margin-top: 0;
         width: 100%;
-        background-color: beige;
+        background-color: white;
     }
     /*projects section header*/
     .projects-section-header {
@@ -124,7 +124,7 @@ i {
     }
     /*code hover*/
     .project:hover .code {
-        color: whitesmoke;
+        color: white;
     }
     /*image*/
     .project-image {
@@ -140,7 +140,7 @@ i {
     /*button*/
     .btn {
         display: flex;
-        color: black;
+        color: white;
         justify-content: center;
         border-radius: 5px;
         margin: 0 40px;
@@ -150,7 +150,7 @@ i {
         transition: 1s;
         font-size: 15px;
         font-weight: 500;
-        background-color: wheat;
+        background-color: black;
     }
     .btn i {
         transition: 1s;
@@ -159,20 +159,20 @@ i {
     }
     /*button hover*/
     .btn-show-all:hover {
-        background-color: black;
-        color: whitesmoke;
+        background-color: white;
+        color: black;
         transition: 1s;
     }
     /*i hover*/
     .btn-show-all:hover>i {
         transform: translateX(10px);
-        color: whitesmoke;
+        color: black;
         transition: 1s;
     }
     /*contact*/
     /* Contact section */
     .contact-section {
-        margin-top: 30px;
+        margin-top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -180,7 +180,7 @@ i {
         text-align: center;
         width: 100%;
         height: 100vh;
-        background: blanchedalmond;
+        background: white;
     }
     .contact-section-header>h2 {
         font-size: 50px;
@@ -208,7 +208,7 @@ i {
     /* Footer */
     footer {
         transition: 1s;
-        border-top: 10px solid wheat;
+        border-top: 5px solid wheat;
         background-color: black;
         font-weight: 300;
         display: flex;
@@ -217,11 +217,11 @@ i {
     }
     footer p,
     footer a {
-        color: whitesmoke;
+        color: white;
         margin: 0;
     }
     #f-a {
-        border-bottom: solid wheat 2px;
+        border-bottom: solid white 2px;
     }
     /*hover*/
     footer:hover {
@@ -229,3 +229,8 @@ i {
         transition: 1s;
     }
 }
+
+
+/*medium mobile*/
+
+@media screen and (min-width:375px) {}
