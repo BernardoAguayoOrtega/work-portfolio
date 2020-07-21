@@ -1,4 +1,4 @@
-    /*export google fonts*/
+        /*export google fonts*/
     
     @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
     /*General styles*/
@@ -78,4 +78,18 @@
             font-size: 20px;
             font-weight: 400;
         }
-    }
+        /*projects section*/
+        .projects-section {
+            width: 100%;
+        }
+        /*projects section header*/
+        .projects-section-header {
+            text-align: center;
+        }
+        /*projects section grid*/
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            /*project*/
+        }
