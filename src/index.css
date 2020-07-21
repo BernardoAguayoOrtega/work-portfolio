@@ -1,0 +1,142 @@
+/*export google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+/*general styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+/*medias for calculate font size*/
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+
+/* 980px / 16px = 61.25em */
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+
+/* 460px / 16px = 28.75em */
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+/* Base styles */
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.8rem;
+    /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+h1,
+h2 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/*nav bar*/
+
+.nav {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 5px 5px gray;
+    z-index: 10;
+}
+
+
+/*nav list*/
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+
+/*media of nav bar*/
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
+
+/*nav list anchor element*/
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+
+/*hover anchor element of nav list*/
+
+.nav-list a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/*welcome section*/
+
+.welcome-section {
+    display: flex;
+}
