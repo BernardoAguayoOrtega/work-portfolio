@@ -172,7 +172,6 @@ i {
     /*contact*/
     /* Contact section */
     .contact-section {
-        margin-top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -190,25 +189,21 @@ i {
         font-weight: 400;
         font-size: 25px;
     }
-    .contact-links {
+    .contact-section-links {
+        margin-top: 15px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 40px;
+    }
+    .contact-section-links p {
+        margin-left: 10%;
     }
     .contact-details {
-        font-size: 20px;
-        transition: transform 0.3s ease-out;
-    }
-    .contact-details:hover {
-        transform: translateY(8px);
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
     }
     /* Footer */
     footer {
         transition: 1s;
-        border-top: 5px solid wheat;
         background-color: black;
         font-weight: 300;
         display: flex;
