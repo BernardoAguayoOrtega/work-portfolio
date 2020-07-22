@@ -77,14 +77,12 @@ i {
     }
     .welcome-section h1 {
         transition: 1s;
+        font-size: 28px;
     }
     /*welcome section hover*/
     .welcome-section h1:hover {
         box-shadow: 20px 5px white;
         transition: 1s;
-    }
-    .welcome-section h1 {
-        font-size: 40px;
     }
     .welcome-section p {
         font-size: 20px;
@@ -190,16 +188,15 @@ i {
         font-size: 25px;
     }
     .contact-section-links {
-        margin-top: 15px;
-        display: flex;
+        margin-top: 5%;
     }
     .contact-section-links p {
-        margin-left: 10%;
+        border-bottom: 1px solid black;
     }
     .contact-details {
         padding: 0;
-        margin: 0;
-        margin-left: 10px;
+        margin: 0 60%;
+        font-size: 20px;
     }
     /* Footer */
     footer {
@@ -228,4 +225,139 @@ i {
 
 /*medium mobile*/
 
-@media screen and (min-width:375px) {}
+@media screen and (min-width:375px) {
+    /*nav section*/
+    .nav-list a {
+        font-size: 22px;
+    }
+    /*welcome section*/
+    .welcome-section h1 {
+        font-size: 30px;
+    }
+    .welcome-section p {
+        font-size: 22px;
+    }
+    /*contact section*/
+    .contact-section-links p {
+        font-size: 20px;
+    }
+    .contact-details {
+        font-size: 30px;
+    }
+}
+
+
+/*mobile large*/
+
+@media screen and (min-width:425px) {
+    /*nav section*/
+    .nav-list a {
+        font-size: 25px;
+    }
+    /*welcome section*/
+    .welcome-section h1 {
+        font-size: 37px;
+    }
+    .welcome-section p {
+        font-size: 25px;
+    }
+    /*projects section*/
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    /*button*/
+    .btn {
+        margin: 0 100px;
+    }
+    .btn-show-all {
+        font-size: 20px;
+    }
+    /*contact section*/
+    .contact-section-links p {
+        font-size: 22px;
+    }
+    .contact-details {
+        font-size: 35px;
+    }
+}
+
+
+/*tablet */
+
+@media screen and (min-width:768px) {
+    /*nav section*/
+    .nav-list {
+        margin: 0;
+        padding: 5px;
+    }
+    .nav {
+        justify-content: flex-end;
+    }
+    .nav-list a {
+        font-size: 30px;
+    }
+    /*welcome section*/
+    .welcome-section h1 {
+        font-size: 50px;
+    }
+    .welcome-section p {
+        font-size: 27px;
+    }
+    /*projects section*/
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    /*button*/
+    .btn {
+        margin: 0 100px;
+    }
+    .btn-show-all {
+        font-size: 20px;
+    }
+    /*contact section*/
+    .contact-section-links p {
+        font-size: 22px;
+    }
+    .contact-details {
+        font-size: 35px;
+    }
+}
+
+
+/*lap */
+
+@media screen and (min-width:1024px) {
+    /*nav section*/
+    .nav-list a {
+        font-size: 30px;
+    }
+    /*welcome section*/
+    .welcome-section h1 {
+        font-size: 60px;
+    }
+    .welcome-section p {
+        font-size: 30px;
+    }
+    /*projects section*/
+    .projects-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /*button*/
+    .btn {
+        margin: 0 300px;
+    }
+    .btn-show-all {
+        font-size: 22px;
+    }
+    /*contact section*/
+    .contact-section-links p {
+        font-size: 30px;
+    }
+    .contact-details {
+        font-size: 50px;
+    }
+    .contact-details i {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+}
