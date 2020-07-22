@@ -279,6 +279,10 @@ i {
     .contact-details {
         font-size: 35px;
     }
+    .contact-details i {
+        margin-top: 10px;
+        margin-left: 50%;
+    }
 }
 
 
